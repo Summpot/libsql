@@ -9,23 +9,23 @@ readme = "bottomless/README.md"
 description = "Bottomless replication for libSQL"
 
 [dependencies]
-anyhow = "1.0.66"
-async-compression = { version = "0.4.4", features = ["tokio", "gzip", "zstd"] }
+anyhow = "1.0.100"
+async-compression = { version = "0.4.37", features = ["tokio", "gzip", "zstd"] }
 aws-config = { version = "1" }
 aws-sdk-s3 = { version = "1" }
 bytes = "1"
 libsql-sys = { path = "../libsql-sys" }
 libsql_replication = { path = "../libsql-replication" }
-tokio = { version = "1.22.2", features = ["rt-multi-thread", "net", "io-std", "io-util", "time", "macros", "sync", "fs"] }
+tokio = { version = "1.49.0", features = ["rt-multi-thread", "net", "io-std", "io-util", "time", "macros", "sync", "fs"] }
 tokio-util = "0.7"
-tracing = "0.1.37"
-tracing-subscriber = "0.3.16"
-arc-swap = "1.6"
-chrono = "0.4.23"
-uuid = "1.4.1"
+tracing = "0.1.44"
+tracing-subscriber = "0.3.22"
+arc-swap = "1.8"
+chrono = "0.4.43"
+uuid = "1.19.0"
 rand = "0.8.5"
-futures-core = "0.3.29"
-serde = { version = "1.0.196", features = ["derive"] }
+futures-core = "0.3.31"
+serde = { version = "1.0.228", features = ["derive"] }
 metrics = "0.21.1"
 
 [features]

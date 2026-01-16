@@ -47,7 +47,7 @@ rusqlite = { package = "libsql-rusqlite", path = "vendored/rusqlite", version = 
 ] }
 hyper = { version = "0.14" }
 tower = { version = "0.4.13" }
-zerocopy = { version = "0.7.32", features = ["derive", "alloc"] }
+zerocopy = { version = "0.7.35", features = ["derive", "alloc"] }
 
 [profile.release]
 codegen-units = 1

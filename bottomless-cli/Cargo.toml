@@ -10,20 +10,20 @@ description = "Command-line interface for bottomless replication for libSQL"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-anyhow = "1.0.66"
-async-compression = { version = "0.4.4", features = ["tokio", "gzip", "zstd"] }
+anyhow = "1.0.100"
+async-compression = { version = "0.4.37", features = ["tokio", "gzip", "zstd"] }
 aws-config = "1"
 aws-sdk-s3 = "1"
 aws-smithy-types = "1"
 bottomless = { version = "0", path = "../bottomless" }
 bytes = "1"
-chrono = "0.4.23"
-clap = { version = "4.0.29", features = ["derive"] }
+chrono = "0.4.43"
+clap = { version = "4.5.54", features = ["derive"] }
 libsql-sys = { path = "../libsql-sys" }
-tokio = { version = "1.23.0", features = ["macros", "rt", "rt-multi-thread"] }
-tracing = "0.1.37"
-tracing-subscriber = "0.3.16"
-uuid = "1.4.1"
+tokio = { version = "1.49.0", features = ["macros", "rt", "rt-multi-thread"] }
+tracing = "0.1.44"
+tracing-subscriber = "0.3.22"
+uuid = "1.19.0"
 rusqlite = { workspace = true }
 
 [package.metadata.dist]

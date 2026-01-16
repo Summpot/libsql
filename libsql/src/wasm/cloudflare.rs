@@ -34,6 +34,7 @@ impl CloudflareSender {
                 cf: CfProperties::new(),
                 method: Method::Post,
                 redirect: RequestRedirect::Follow,
+                ..Default::default()
             },
         )?)
         .send()
